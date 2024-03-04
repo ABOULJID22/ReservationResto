@@ -34,9 +34,6 @@ const Profile = () => {
   };
 
 
-  const baseUrl = "http://localhost:8000"; // Remplacez par votre URL de base
-const imageUrl = `${baseUrl}/uploads/${user.photo}`;
-/*   const imageUrl = `/storage${user.photo}`; */
   return (
 
 
@@ -104,7 +101,7 @@ const imageUrl = `${baseUrl}/uploads/${user.photo}`;
             <div className="flex flex-col items-center -mt-20">
             <img
                   className="w-40 border-4 border-white rounded-full"
-                  src={imageUrl}
+                  src={'http://localhost:8000/'+user.photo}
                   alt="User Image"
                   loading="lazy"
               />

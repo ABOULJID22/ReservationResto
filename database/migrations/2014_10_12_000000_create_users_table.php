@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('role')->default('user');
             $table->string('telephone')->nullable();
             $table->string('sexe')->nullable();
-            $table->string('nationalite')->nullable(); // Corrected from 'required' to 'nullable'
+            $table->string('nationalite')->nullable();
             $table->string('photo')->nullable();
             $table->string('adresse')->nullable();
             $table->string('ville')->nullable();

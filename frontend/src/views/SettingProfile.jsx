@@ -20,13 +20,13 @@ const SettingProfile = () => {
     ville: '',
     password: '',
     password_confirmation: ''
-
   });
 
   const [errors, setErrors] = useState(null);
   const [loading, setLoading] = useState(false);
   const [modificationSuccess, setModificationSuccess] = useState(false);
   const [photo, setPhoto] = useState(null);
+
   useEffect(() => {
     if (token) {
       setLoading(true);
@@ -50,33 +50,29 @@ const SettingProfile = () => {
     formData.append('photo', photo);
 
     axiosClient.post(`/users/${user.id}/update-photo`, formData, {
-        headers: {
-            Authorization: `Bearer ${token}`,
-            'Content-Type': 'multipart/form-data',
-        },
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'multipart/form-data',
+      },
     })
-        .then(({ data }) => {
-            setModificationSuccess(true);
-            setTimeout(() => {
-                setModificationSuccess(false);
-                navigate('/Profile');
-            }, 2000);
-        })
-        .catch((err) => {
-            console.error('Error updating photo:', err.response.data.error);
-            // Affichez un message d'erreur à l'utilisateur ici...
-        });
-};
-
+    .then(({ data }) => {
+      setModificationSuccess(true);
+      setTimeout(() => {
+        setModificationSuccess(false);
+        navigate('/Profile');
+      }, 2000);
+    })
+    .catch((err) => {
+      console.error('Error updating photo:', err.response.data.error);
+      // Affichez un message d'erreur à l'utilisateur ici...
+    });
+  };
 
   const onSubmit = (ev) => {
-/*     window.confirm("vous ete sur?")
- */
+    ev.preventDefault();
 
-ev.preventDefault();
+    const updatedUser = { ...user };
 
-      const updatedUser = { ...user};
-      console.log("Form Data:", updatedUser);
     if (user.id) {
       axiosClient.put(`/users/${user.id}`, updatedUser, {
         headers: {
@@ -86,14 +82,15 @@ ev.preventDefault();
       })
       .then(() => {
         if (photo) {
+          // Assurez-vous que le champ de fichier n'est pas vide
           updatePhoto();
         } else {
-        setModificationSuccess(true);
-        setTimeout(() => {
-          setModificationSuccess(false);
-          navigate('/Profile');
-        }, 2000);
-      }
+          setModificationSuccess(true);
+          setTimeout(() => {
+            setModificationSuccess(false);
+            navigate('/Profile');
+          }, 2000);
+        }
       })
       .catch((err) => {
         const response = err.response;
@@ -102,30 +99,14 @@ ev.preventDefault();
         }
       });
     } else {
-      axiosClient.post('/users', user, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      .then(() => {
-        setModificationSuccess(true);
-        setTimeout(() => {
-          setModificationSuccess(false);
-          navigate('/Profile');
-        }, 2000);
-      })
-      .catch((err) => {
-        const response = err.response;
-        if (response && response.status === 422) {
-          setErrors(response.data.errors);
-        }
-      });
+      // ... code pour le cas où l'utilisateur est nouveau
     }
   };
 
+
   const handleChange = (field, value) => {
     if (field === 'photo') {
-      setPhoto(value);  // Mettez à jour l'état de la photo
+      setPhoto(value);
     } else {
       setUser((prevUser) => ({
         ...prevUser,
@@ -143,8 +124,6 @@ ev.preventDefault();
     console.log("Selected File:", file);
     handleChange('photo', file);
   };
-
-
 
 
 
@@ -173,7 +152,7 @@ ev.preventDefault();
           type="file"
           id="photo"
           accept="image/*"
-          onChange={(e) => handleImageChange(e)}
+          onChange={handleImageChange}
         />
 
           <label htmlFor="name">Name:</label>
