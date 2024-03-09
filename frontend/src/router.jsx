@@ -1,20 +1,22 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import Login from "./views/Login";
-import Signup from "./views/Signup";
-import Users from "./views/Users";
-import NotFound from "./views/NotFound.jsx";
+//admin route
+import Dashboard from "./views/Admin/Dashboard.jsx";
+import Users from "./views/Admin/Users";
+import UserForm from "./views/Admin/UserForm.jsx";
+//user
+import DashboardUser from "./views/User/DashboardUser.jsx";
+//components
 import DefaultLayout from "./components/DefaultLayout.jsx";
 import GuestLayout from "./components/GuestLayout.jsx";
 import AdminLayout from "./components/AdminLayout.jsx";
-import Dashboard from "./views/Dashboard.jsx";
-import Home from "./views/Home.jsx";
-import UserForm from "./views/UserForm.jsx";
-import Contact from"./views/Contact.jsx";
-import About from "./views/About.jsx";
-import Profile from "./views/Profile.jsx";
-import SettingProfile from "./views/SettingProfile.jsx";
-import GuestHome from "./views/GeustHome.jsx";
-import ShowDetail from "./views/ShowDetail.jsx";
+//pages
+import Signup from "./views/Pages/Signup";
+import Login from "./views/Pages/Login";
+import NotFound from "./views/Pages/NotFound.jsx";
+import Home from "./views/Pages/Home.jsx";
+import Contact from"./views/Pages/Contact.jsx";
+import About from "./views/Pages/About.jsx";
+import GuestHome from "./views/Pages/GeustHome.jsx";
 const router = createBrowserRouter([
 
   // Routes pour GuestLayout
@@ -72,18 +74,12 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About/>
       },
+
       {
-        path: '/profile',
-        element: <Profile/>
+        path: '/DashboardUser',
+        element: <DashboardUser />
       },
-      {
-        path: '/SettingProfile',
-        element: <SettingProfile />
-      },
-      {
-        path: '/ShowDetail/:id',
-        element: <ShowDetail />
-      },
+
 
     ]
   },

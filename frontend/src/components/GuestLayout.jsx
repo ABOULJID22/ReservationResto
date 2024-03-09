@@ -1,13 +1,13 @@
 import {Navigate, Outlet} from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
-import NavBar from "../views/Navbar";
-import Footr from "../views/Footr";
+import NavBar from "../views/Pages/Navbar";
+import Footr from "../views/Pages/Footr";
 export default function GuestLayout() {
   const { token } = useStateContext();
 
-  if (token) {
+/*   if (token) {
     return <Navigate to="/home" />;
-  }
+  } */
 
 
   return (
