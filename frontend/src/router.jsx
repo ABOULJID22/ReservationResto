@@ -16,7 +16,8 @@ import NotFound from "./views/Pages/NotFound.jsx";
 import Home from "./views/Pages/Home.jsx";
 import Contact from"./views/Pages/Contact.jsx";
 import About from "./views/Pages/About.jsx";
-import GuestHome from "./views/Pages/GeustHome.jsx";
+import ForgetPassword from "./views/Pages/ForgetPassword.jsx";
+import UpdatePassword from "./views/Pages/UpdatePassword.jsx";
 const router = createBrowserRouter([
 
   // Routes pour GuestLayout
@@ -26,12 +27,9 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Navigate to='/Guesthome' />
+        element: <Navigate to='/home' />
       },
-      {
-        path: "/Guesthome",
-        element: <GuestHome />,
-      },
+
       {
         path: "/login",
         element: <Login/>,
@@ -48,7 +46,14 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About/>
       },
-
+      {
+        path:'/forgetPassword',
+        element:<ForgetPassword/>
+      },
+      {
+        path:'/reset-password/:token/:email',
+        element:<UpdatePassword/>
+      },
 
     ],
   },

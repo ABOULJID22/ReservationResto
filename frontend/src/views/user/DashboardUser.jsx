@@ -75,7 +75,8 @@ function DashboardUser() {
       setModificationSuccess(true);
       setTimeout(() => {
         setModificationSuccess(false);
-        navigate('/DashboardUser');
+        setShowProfile(true);
+        setShowSettings(false);
       }, 2000);
     })
     .catch((err) => {

@@ -12,6 +12,18 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     */
+    public function index()
+    {
+        $userId = Auth::id();
+    // Utilisez $userId comme nécessaire dans votre logique
+    return UserResource::collection(User::query()->orderBy('id', 'desc')->paginate(100));
+/*         return UserResource::collection(User::query()->orderBy('id', 'desc')->paginate(10));
+ */    }
     /**
      * Store a newly created resource in storage.
      *
@@ -124,6 +136,23 @@ class UserController extends Controller
     }
 
     return response()->json(['message' => 'Aucune nouvelle photo n\'a été fournie.'], 422);
+}
+
+
+public function UpdatePassword(Request $request, User $user)
+{
+    // Valider les données de la requête
+    $request->validate([
+        'password' => 'required|string|min:8|confirmed',
+    ]);
+
+    // Mettre à jour le mot de passe de l'utilisateur
+    $user->update([
+        'password' => bcrypt($request->password),
+    ]);
+
+    // Retourner une réponse de succès
+    return response()->json(['message' => 'Mot de passe réinitialisé avec succès'], 200);
 }
 
 

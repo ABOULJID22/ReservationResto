@@ -49,4 +49,16 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
+
+    /**
+     * Define the relationship with password resets.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function passwordResets()
+    {
+        return $this->hasMany(PasswordReset::class);
+    }
 }

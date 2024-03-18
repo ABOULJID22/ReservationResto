@@ -10,7 +10,7 @@ export default function Login() {
   const passwordRef = createRef();
   const { setUser, setToken } = useStateContext();
   const [message, setMessage] = useState(null);
-  const navigate = useNavigate(); // pour la redirection
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const onSubmit = (ev) => {
     ev.preventDefault();
@@ -42,7 +42,8 @@ export default function Login() {
   };
 
   return (
-   /*  <div className="login-signup-form animated fadeInDown">
+   /*
+   <div className="login-signup-form animated fadeInDown">
       <div className="form">
         <form onSubmit={onSubmit}>
           <h1 className="title">Login into your account</h1>
@@ -61,7 +62,8 @@ export default function Login() {
           </p>
         </form>
       </div>
-    </div> */
+    </div>
+    */
     <div className="flex items-center min-h-screen bg-gray-50 mb-5 py-9">
       <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
         <div className="flex flex-col md:flex-row">
@@ -129,12 +131,12 @@ export default function Login() {
               </button>
               </form>
               <p className="mt-4">
-                <a
+              <Link to="/forgetPassword"
                   className="text-sm text-blue-600 hover:underline"
-                  href="./forgot-password.html"
+
                 >
                   Forgot your password?
-                </a>
+                </Link>
               </p>
               <hr className="my-8" />
 

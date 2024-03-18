@@ -22,9 +22,9 @@ const Home = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000
   };
   return (
@@ -619,108 +619,7 @@ Add to Cart
 
 
 
-{/*<section className="process s-padding">
-            <div className="container">
-                <div className="row flex justify-between items-center ">
-                    <div className="lg:w-6/12 " data-aosName="fade-right">
-                        <div className="process-img-box md:w-full">
-                            <div className="process-img">
-                                <img src="imgs/thumb/process-themb.png" alt="thumb"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="lg:w-6/12 md:w-full ">
-                        <div className="process-head" data-aosName="fade-up">
-                            <h2>The Process of Crafting your Dining Experience</h2>
-                        </div>
-                        <div className="process-item-box ">
-                            <div className="process-item" data-aosName="fade-up" data-aos-delay="100">
-                                <div className="process-item-icon">
-                                    <div className="icon ">
-                                        <span>
-<svg width="30" height="34" viewBox="0 0 30 34" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.7371 23.5034C23.8364 20.3264 26.6663 15.5679 26.6663 11.7606C26.6663 5.44878 21.443 0.332031 14.9997 0.332031C8.55635 0.332031 3.33301 5.44878 3.33301 11.7606C3.33301 15.5679 6.16294 20.3264 9.26228 23.5034C11.3011 25.5932 13.4566 26.9987 14.9997 26.9987C16.5428 26.9987 18.6982 25.5932 20.7371 23.5034ZM14.9997 15.332C16.8406 15.332 18.333 13.8396 18.333 11.9987C18.333 10.1577 16.8406 8.66536 14.9997 8.66536C13.1587 8.66536 11.6663 10.1577 11.6663 11.9987C11.6663 13.8396 13.1587 15.332 14.9997 15.332Z" fill="white" />
-<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M6.75902 24.4883C2.6873 25.3824 0 26.9199 0 28.6668C0 31.4282 6.71573 33.6668 15 33.6668C23.2843 33.6668 30 31.4282 30 28.6668C30 26.9199 27.3127 25.3824 23.241 24.4883C23.0051 24.7502 22.7668 25.0045 22.5269 25.2504C21.4064 26.399 20.2024 27.4143 19.0016 28.1599C17.8569 28.8707 16.455 29.5 15 29.5C13.545 29.5 12.1431 28.8707 10.9984 28.1599C9.7976 27.4143 8.59362 26.399 7.47312 25.2504C7.23321 25.0045 6.99487 24.7502 6.75902 24.4883Z" fill="white" />
-</svg>
-                                          </span>
-                                    </div>
-                                </div>
-                                <div className="text">
-                                    <h3>Set your location</h3>
-                                    <p>A high quality solution beautifully food for customers</p>
-                                </div>
-                                <div className="process-item-right-img">
-                                    <img src="imgs/icon/1.png" alt="img"/>
-                                </div>
-                            </div>
-                            <div className="process-item" data-aosName="fade-up" data-aos-delay="200">
-                                <div className="process-item-icon">
-                                    <div className="icon">
-                                        <span>
-<svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-<path opacity="0.4" d="M3.66634 10H0.333008V25L7.51773 28.5924C9.36914 29.5181 11.4106 30 13.4806 30H26.9997C28.8406 30 30.333 28.5076 30.333 26.6667C30.333 24.8257 28.8406 23.3333 26.9997 23.3333H24.3604C22.8079 23.3333 21.2768 22.9719 19.8882 22.2776L14.9863 19.8267C15.3068 19.5315 15.5716 19.1655 15.7544 18.739C16.4436 17.1307 15.7065 15.2676 14.1034 14.5662L3.66634 10Z" fill="white" />
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.666 0C19.5614 0 18.666 0.89543 18.666 2V13C18.666 14.1046 19.5614 15 20.666 15H31.666C32.7706 15 33.666 14.1046 33.666 13V2C33.666 0.895431 32.7706 0 31.666 0H20.666ZM27.8327 6.25C28.523 6.25 29.0827 5.69036 29.0827 5C29.0827 4.30964 28.523 3.75 27.8327 3.75H24.4993C23.809 3.75 23.2493 4.30964 23.2493 5C23.2493 5.69036 23.809 6.25 24.4993 6.25H27.8327Z" fill="white" />
-</svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="text">
-                                    <h3>Select Food</h3>
-                                    <p>A high quality solution beautifully food for customers</p>
-                                </div>
-                                <div className="process-item-right-img">
-                                    <img src="imgs/icon/2.png" alt="img"/>
-                                </div>
-                            </div>
-                            <div className="process-item" data-aosName="fade-up" data-aos-delay="300">
-                                <div className="process-item-icon">
-                                    <div className="icon">
-                                        <span>
-<svg width="24" height="34" viewBox="0 0 24 34" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-<path opacity="0.4" d="M16.6667 0.332031H3.33333C1.49238 0.332031 0 1.82442 0 3.66537V30.332C0 32.173 1.49238 33.6654 3.33333 33.6654H16.6667C18.5076 33.6654 20 32.173 20 30.332V3.66536C20 1.82442 18.5076 0.332031 16.6667 0.332031Z" fill="white" />
-<path d="M10 8.66406H20C21.8409 8.66406 23.3333 10.1564 23.3333 11.9974V18.6641C23.3333 20.505 21.8409 21.9974 20 21.9974H10V8.66406Z" fill="white" />
-<path d="M11.6663 28.6667C11.6663 29.5871 10.9201 30.3333 9.99967 30.3333C9.0792 30.3333 8.33301 29.5871 8.33301 28.6667C8.33301 27.7462 9.0792 27 9.99967 27C10.9201 27 11.6663 27.7462 11.6663 28.6667Z" fill="white" />
-<path opacity="0.4" d="M9.99968 14.5L23.333 14.5L23.333 12L9.99968 12L9.99968 14.5Z" fill="white" />
-</svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="text">
-                                    <h3>Pay Cash or Online</h3>
-                                    <p>Providing an upscale and elegant ambiance for ..</p>
-                                </div>
-                                <div className="process-item-right-img">
-                                    <img src="imgs/icon/3.png" alt="img"/>
-                                </div>
-                            </div>
-                            <div className="process-item" data-aosName="fade-up" data-aos-delay="400">
-                                <div className="process-item-icon">
-                                    <div className="icon">
-                                        <span>
-                                            <svg width="34" height="31" viewBox="0 0 34 31" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                                            <path opacity="0.4" d="M13.6663 0H6.99967C3.31778 0 0.333008 2.98477 0.333008 6.66667V20C0.333008 23.1087 2.46079 25.7204 5.33942 26.4583C5.44698 24.7144 6.89538 23.3333 8.66634 23.3333C10.5073 23.3333 11.9997 24.8257 11.9997 26.6667H20.333V6.66667C20.333 2.98477 17.3482 0 13.6663 0Z" fill="white" />
-                                            <path d="M20.333 26.668V6.66797H25.6815C26.5284 6.66797 27.3435 6.9903 27.9613 7.56951L32.6128 11.9303C33.285 12.5604 33.6663 13.4407 33.6663 14.3621V23.3346C33.6663 25.1756 32.174 26.668 30.333 26.668H20.333Z" fill="white" />
-                                            <path d="M12.8333 26.6667C12.8333 28.9679 10.9679 30.8333 8.66667 30.8333C6.36548 30.8333 4.5 28.9679 4.5 26.6667C4.5 26.5792 4.5027 26.4923 4.50801 26.4062C4.64247 24.2263 6.45296 22.5 8.66667 22.5C10.9679 22.5 12.8333 24.3655 12.8333 26.6667Z" fill="white" />
-                                            <path opacity="0.4" d="M31.1587 26.6667C31.1587 28.9679 29.2932 30.8333 26.992 30.8333C24.6908 30.8333 22.8253 28.9679 22.8253 26.6667C22.8253 26.5792 22.828 26.4923 22.8333 26.4062C22.9678 24.2263 24.7783 22.5 26.992 22.5C29.2932 22.5 31.1587 24.3655 31.1587 26.6667Z" fill="white" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08301 8.33203C9.08301 7.64168 9.64265 7.08203 10.333 7.08203L13.6663 7.08203C14.3567 7.08203 14.9163 7.64168 14.9163 8.33203C14.9163 9.02239 14.3567 9.58203 13.6663 9.58203L10.333 9.58203C9.64265 9.58203 9.08301 9.02239 9.08301 8.33203Z" fill="white" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 15C5.75 14.3096 6.30964 13.75 7 13.75L13.6667 13.75C14.357 13.75 14.9167 14.3096 14.9167 15C14.9167 15.6904 14.357 16.25 13.6667 16.25H7C6.30964 16.25 5.75 15.6904 5.75 15Z" fill="white" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="text">
-                                    <h3>Delivery or Pickup</h3>
-                                    <p>Allowing customers to easily book tables through</p>
-                                </div>
-                                <div className="process-item-right-img">
-                                    <img src="imgs/icon/4.png" alt="img"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</section> */}
+
 
 
 
@@ -1032,7 +931,7 @@ Add to Cart
 
 {/* views*/}
 
-<section className="customer s-padding mb-5">
+<section className="customer s-padding ">
     <div className="container">
         <div className="row flex justify-between items-center">
             <div className="col-lg-12">
@@ -1042,10 +941,50 @@ Add to Cart
             </div>
         </div>
 
-        <div className="justify-between gap-4 mx-5 ">{/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 */}
+        <div className=" justify-between gap-4 mx-5 ">{/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 */}
         <Slider ref={slider => (sliderRef = slider)} {...settings}>
-
+ 
             {/* Premier avis client */}
+            <div className="col-span-1 md:col-span-2 lg:col-span-1  mb-2">
+                <div className="customer-item aos-init aos-animate" data-aosNameclassName="fade-up">
+                    <div className="customer-img">
+                        <img src="./imgs/icon/customer-icon.png" alt="icon"/>
+                    </div>
+                    <div className="customer-item-text">
+                        <p>"An absolute foodie's paradise! The flavors at RestoAbouljid are a symphony of delight. Every bite tells a story of passion and skill. A must-visit for anyone seeking beyond compare."</p>
+                    </div>
+                </div>
+                <div className="customer-inner">
+                    <div className="customer-inner-img">
+                        <img src="./imgs/small/customer-1.png" alt="img"/>
+                    </div>
+                    <div className="customer-inner-text">
+                    <div className="flex space-x-1">
+                        <span>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
+                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
+                          </svg>
+                        </span>
+
+                        <span>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
+                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
+                          </svg>
+                        </span>
+
+                        <span>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
+                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
+                          </svg>
+                        </span>
+                      </div>
+
+                        <h3>Jonson Roy</h3>
+                        <h5>Job Holder</h5>
+                    </div>
+                </div>
+            </div>
+
             <div className="col-span-1 md:col-span-2 lg:col-span-1  mb-2 ">
                 <div className="customer-item aos-init aos-animate" data-aosNameclassName="fade-up">
                     <div className="customer-img">
@@ -1086,122 +1025,7 @@ Add to Cart
                 </div>
             </div>
 
-            {/* Deuxième avis client */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-1 mx-4 mb-2">
-                <div className="customer-item aos-init aos-animate" data-aosNameclassName="fade-up">
-                    <div className="customer-img">
-                        <img src="./imgs/icon/customer-icon.png" alt="icon"/>
-                    </div>
-                    <div className="customer-item-text">
-                        <p>"An absolute foodie's paradise! The flavors at RestoAbouljid are a symphony of delight. Every bite tells a story of passion and skill. A must-visit for anyone seeking beyond compare."</p>
-                    </div>
-                </div>
-                <div className="customer-inner">
-                    <div className="customer-inner-img">
-                        <img src="./imgs/small/customer-2.png" alt="img"/>
-                    </div>
-                    <div className="customer-inner-text">
-                        <div className="flex space-x-1">
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
 
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
-
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
-                      </div>
-                        <h3>David Ethic</h3>
-                        <h5>Dog Trainer</h5>
-                    </div>
-                </div>
-            </div>
-            {/* Deuxième avis client */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-1  ">
-                <div className="customer-item aos-init aos-animate" data-aosNameclassName="fade-up">
-                    <div className="customer-img">
-                        <img src="./imgs/icon/customer-icon.png" alt="icon"/>
-                    </div>
-                    <div className="customer-item-text">
-                        <p>"An absolute foodie's paradise! The flavors at RestoAbouljid are a symphony of delight. Every bite tells a story of passion and skill. A must-visit for anyone seeking beyond compare."</p>
-                    </div>
-                </div>
-                <div className="customer-inner">
-                    <div className="customer-inner-img">
-                        <img src="./imgs/small/customer-2.png" alt="img"/>
-                    </div>
-                    <div className="customer-inner-text">
-                        <div className="flex space-x-1">
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
-
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
-
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
-                      </div>
-                        <h3>David Ethic</h3>
-                        <h5>Dog Trainer</h5>
-                    </div>
-                </div>
-            </div>
-            <div className="col-span-1 d-md-none d-lg-block  mx-4 mb-2">
-                <div className="customer-item aos-init aos-animate" data-aosNameclassName="fade-up">
-                    <div className="customer-img">
-                        <img src="./imgs/icon/customer-icon.png" alt="icon"/>
-                    </div>
-                    <div className="customer-item-text">
-                        <p>"An absolute foodie's paradise! The flavors at RestoAbouljid are a symphony of delight. Every bite tells a story of passion and skill. A must-visit for anyone seeking beyond compare."</p>
-                    </div>
-                </div>
-                <div className="customer-inner">
-                    <div className="customer-inner-img">
-                        <img src="./imgs/small/customer-3.png" alt="img"/>
-                    </div>
-                    <div className="customer-inner-text">
-                    <div className="flex space-x-1">
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
-
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
-
-                        <span>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlnsName="http://www.w3.org/2000/svg">
-                            <path d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z" fill="#FFB23E" />
-                          </svg>
-                        </span>
-                      </div>
-                        <h3>Nom du client</h3>
-                        <h5>Profession du client</h5>
-                    </div>
-                </div>
-            </div>
             </Slider>
         </div>
 
@@ -1212,18 +1036,64 @@ Add to Cart
 
 
 
-<div className="sign-up-top">
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="md:mb-0 flex items-center mb-10">
-            <div className="">
-                <a href="index.html">
-                    <img src="imgs/thumb/login.png" alt="img"/>
-                </a>
+<section className="process px-4 py-8">
+    <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row lg:gap-8">
+            <div className="lg:w-1/2 order-last lg:order-first flex justify-center">
+                <div className="process-img-box">
+                    <div className="process-img"><img src="imgs/thumb/process-themb.png" alt="thumb"/></div>
+                </div>
+            </div>
+            <div className="lg:w-1/2">
+                <div className="process-head">
+                    <h2 className="text-3xl font-bold">Le processus de création de votre expérience culinaire</h2>
+                </div>
+                <div className="process-item-box">
+                    <div className="process-item flex items-center" >
+                        <div className="process-item-icon">
+                            <div className="icon"><span><svg className="w-8 h-9" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" fillRule="evenodd" clipRule="evenodd" d="M20.7371 23.5034C23.8364 20.3264 26.6663 15.5679 26.6663 11.7606C26.6663 5.44878 21.443 0.332031 14.9997 0.332031C8.55635 0.332031 3.33301 5.44878 3.33301 11.7606C3.33301 15.5679 6.16294 20.3264 9.26228 23.5034C11.3011 25.5932 13.4566 26.9987 14.9997 26.9987C16.5428 26.9987 18.6982 25.5932 20.7371 23.5034ZM14.9997 15.332C16.8406 15.332 18.333 13.8396 18.333 11.9987C18.333 10.1577 16.8406 8.66536 14.9997 8.66536C13.1587 8.66536 11.6663 10.1577 11.6663 11.9987C11.6663 13.8396 13.1587 15.332 14.9997 15.332Z"/></svg></span></div>
+                        </div>
+                        <div className="text">
+                            <h3>Choisissez votre emplacement</h3>
+                            <p>Une solution de haute qualité et magnifiquement conçue pour les clients</p>
+                        </div>
+                        <div className="process-item-right-img"><img src="imgs/icon/1.png" alt="img"/></div>
+                    </div>
+                    <div className="process-item" >
+                        <div className="process-item-icon ">
+                            <div className="icon"><span><svg className="w-9 h-8" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.4" fill="#fff" d="M3.66634 10H0.333008V25L7.51773 28.5924C9.36914 29.5181 11.4106 30 13.4806 30H26.9997C28.8406 30 30.333 28.5076 30.333 26.6667C30.333 24.8257 28.8406 23.3333 26.9997 23.3333H24.3604C22.8079 23.3333 21.2768 22.9719 19.8882 22.2776L14.9863 19.8267C15.3068 19.5315 15.5716 19.1655 15.7544 18.739C16.4436 17.1307 15.7065 15.2676 14.1034 14.5662L3.66634 10Z"/><path fillRule="evenodd" clipRule="evenodd" d="M20.666 0C19.5614 0 18.666 0.89543 18.666 2V13C18.666 14.1046 19.5614 15 20.666 15H31.666C32.7706 15 33.666 14.1046 33.666 13V2C33.666 0.895431 32.7706 0 31.666 0H20.666ZM27.8327 6.25C28.523 6.25 29.0827 5.69036 29.0827 5C29.0827 4.30964 28.523 3.75 27.8327 3.75H24.4993C23.809 3.75 23.2493 4.30964 23.2493 5C23.2493 5.69036 23.809 6.25 24.4993 6.25H27.8327Z" fill="#fff"/></svg></span></div>
+                        </div>
+                        <div className="text">
+                            <h3>Sélectionnez votre nourriture</h3>
+                            <p>Une solution de haute qualité et magnifiquement conçue pour les clients</p>
+                        </div>
+                        <div className="process-item-right-img"><img src="imgs/icon/2.png" alt="img"/></div>
+                    </div>
+                    <div className="process-item" >
+                        <div className="process-item-icon">
+                            <div className="icon "><span><svg className="w-6 h-10" viewBox="0 0 24 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.4" fill="#fff" d="M16.6667 0.332031H3.33333C1.49238 0.332031 0 1.82442 0 3.66537V30.332C0 32.173 1.49238 33.6654 3.33333 33.6654H16.6667C18.5076 33.6654 20 32.173 20 30.332V3.66536C20 1.82442 18.5076 0.332031 16.6667 0.332031Z"/><path fill="#fff" d="M10 8.66406H20C21.8409 8.66406 23.3333 10.1564 23.3333 11.9974V18.6641C23.3333 20.505 21.8409 21.9974 20 21.9974H10V8.66406Z"/><path fill="#fff" d="M11.6663 28.6667C11.6663 29.5871 10.9201 30.3333 9.99967 30.3333C9.0792 30.3333 8.33301 29.5871 8.33301 28.6667C8.33301 27.7462 9.0792 27 9.99967 27C10.9201 27 11.6663 27.7462 11.6663 28.6667Z"/><path opacity="0.4" fill="#fff" d="M9.99968 14.5L23.333 14.5L23.333 12L9.99968 12L9.99968 14.5Z"/></svg></span></div>
+                        </div>
+                        <div className="text">
+                            <h3>Payez en espèces ou en ligne</h3>
+                            <p>Offrir une ambiance haut de gamme et élégante pour...</p>
+                        </div>
+                        <div className="process-item-right-img"><img src="imgs/icon/3.png" alt="img"/></div>
+                    </div>
+                    <div className="process-item"  >
+                        <div className="process-item-icon">
+                            <div className="icon"><span><svg className="w-9 h-10" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.4" fill="#fff" d="M13.6663 0H6.99967C3.31778 0 0.333008 2.98477 0.333008 6.66667V20C0.333008 23.1087 2.46079 25.7204 5.33942 26.4583C5.44698 24.7144 6.89538 23.3333 8.66634 23.3333C10.5073 23.3333 11.9997 24.8257 11.9997 26.6667H20.333V6.66667C20.333 2.98477 17.3482 0 13.6663 0Z"/><path fill="#fff" d="M20.333 26.668V6.66797H25.6815C26.5284 6.66797 27.3435 6.9903 27.9613 7.56951L32.6128 11.9303C33.285 12.5604 33.6663 13.4407 33.6663 14.3621V23.3346C33.6663 25.1756 32.174 26.668 30.333 26.668H20.333Z"/><path fill="#fff" d="M12.8333 26.6667C12.8333 28.9679 10.9679 30.8333 8.66667 30.8333C6.36548 30.8333 4.5 28.9679 4.5 26.6667C4.5 26.5792 4.5027 26.4923 4.50801 26.4062C4.64247 24.2263 6.45296 22.5 8.66667 22.5C10.9679 22.5 12.8333 24.3655 12.8333 26.6667Z"/><path opacity="0.4" fill="#fff" d="M31.1587 26.6667C31.1587 28.9679 29.2932 30.8333 26.992 30.8333C24.6908 30.8333 22.8253 28.9679 22.8253 26.6667C22.8253 26.5792 22.828 26.4923 22.8333 26.4062C22.9678 24.2263 24.7783 22.5 26.992 22.5C29.2932 22.5 31.1587 24.3655 31.1587 26.6667Z"/><path fillRule="evenodd" clipRule="evenodd" fill="#fff" d="M9.08301 8.33203C9.08301 7.64168 9.64265 7.08203 10.333 7.08203L13.6663 7.08203C14.3567 7.08203 14.9163 7.64168 14.9163 8.33203C14.9163 9.02239 14.3567 9.58203 13.6663 9.58203L10.333 9.58203C9.64265 9.58203 9.08301 9.02239 9.08301 8.33203Z"/><path fillRule="evenodd" clipRule="evenodd" fill="#fff" d="M5.75 15C5.75 14.3096 6.30964 13.75 7 13.75L13.6667 13.75C14.357 13.75 14.9167 14.3096 14.9167 15C14.9167 15.6904 14.357 16.25 13.6667 16.25H7C6.30964 16.25 5.75 15.6904 5.75 15Z"/></svg></span></div>
+                        </div>
+                        <div className="text">
+                            <h3>Livraison ou ramassage</h3>
+                            <p>Permettre aux clients de réserver facilement des tables à travers...</p>
+                        </div>
+                        <div className="process-item-right-img"><img src="imgs/icon/4.png" alt="img"/></div>
+                    </div>
+                </div>
             </div>
         </div>
-      
     </div>
-</div>
+</section>
 
 
 

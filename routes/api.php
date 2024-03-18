@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\NewPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +25,9 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::apiResource('/users', UserController::class);
     Route::post('/users/{user}/update-photo', [UserController::class, 'updatePhoto']);
-
 });
 
 Route::post('/signup', [AuthController::class, 'signup']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::post('/forgotpassword', [AuthController::class, 'forgotPassword'])->name('password.email');
+Route::post('/reset-password/{token}/{email}', [AuthController::class, 'updatePassword']);

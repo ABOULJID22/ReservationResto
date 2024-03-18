@@ -29,7 +29,7 @@ const handleSearchSubmit = (event) => {
     axiosClient.post("/logout").then(() => {
       setUser({});
       setToken(null);
-      navigate("/Guesthome");
+      navigate("/home");
     });
   };
 
@@ -202,7 +202,7 @@ const handleSearchSubmit = (event) => {
                   aria-labelledby="user-menu-button"
                   tabIndex="-1"
                 >
-                 
+
                   <Link
                     to="/DashboardUser"
                     className="block px-4 py-2 text-sm text-gray-700"
