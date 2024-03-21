@@ -5,22 +5,21 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
+
 {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('progress_cuissen', function (Blueprint $table) {
+
+        
+        Schema::create('local_reservations', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_reservation_local');
-            $table->string('statuConfirme');
-            $table->string('Statusfacture');
+            $table->unsignedBigInteger('local_cart_command_id');
             $table->timestamps();
-
-            $table->foreign('id_reservation_local')->references('id')->on('reservation_local');
+            $table->foreign('local_cart_command_id')->references('id')->on('local_cart_commands');
         });
-
     }
 
     /**
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('progress_cuissens');
+        Schema::dropIfExists('local_reservations');
     }
 };

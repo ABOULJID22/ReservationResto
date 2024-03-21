@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reservation_local', function (Blueprint $table) {
+        Schema::create('restaurant_tables', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_cart_command_local');
+            $table->integer('table_count');
+            $table->boolean('fixed_count')->default(false);
+            $table->boolean('reservation_available')->default(false);
             $table->timestamps();
-            $table->foreign('id_cart_command_local')->references('id')->on('cart_command_local');
         });
-
     }
 
     /**
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reservation_locals');
+        Schema::dropIfExists('restaurant_tables');
     }
 };

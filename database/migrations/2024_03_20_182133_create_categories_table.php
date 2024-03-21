@@ -14,11 +14,10 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->integer('nbr_items');
+            $table->integer('item_count');
             $table->string('img')->nullable();
             $table->timestamps();
         });
-
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -10,7 +10,7 @@ class Menu extends Model
     use HasFactory;
 
     protected $fillable = [
-        'img', 'title', 'quantite_serve', 'offre', 'view', 'price', 'new_price', 'category_id', 'with_sauce', 'type', 'is_available_delevery', 'is_most_popular',
+        'img', 'title', 'quantity_served', 'offer', 'views', 'price', 'new_price', 'category_id', 'with_sauce', 'type', 'is_available_delivery', 'is_popular'
     ];
 
     public function category()

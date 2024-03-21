@@ -94,7 +94,7 @@ const handleSearchSubmit = (event) => {
                 >
                   Home
                 </Link>):(<Link
-                  to="/Guesthome"
+                  to="/home"
                   className="text-white rounded-md px-3 py-2 text-sm font-medium"
                 >
                   Home
@@ -204,7 +204,7 @@ const handleSearchSubmit = (event) => {
                 >
 
                   <Link
-                    to="/DashboardUser"
+                    to={`/DashboardUser/${user.id}`}
                     className="block px-4 py-2 text-sm text-gray-700"
                     role="menuitem"
                     tabIndex="-1"

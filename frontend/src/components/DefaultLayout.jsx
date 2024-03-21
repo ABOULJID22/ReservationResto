@@ -11,7 +11,6 @@ export default function DefaultLayout() {
 
 
 
-
   useEffect(() => {
     axiosClient.get('/user')
       .then(({data}) => {
@@ -20,7 +19,8 @@ export default function DefaultLayout() {
   }, [])
 
   return (
-    <><NavBar/>
+    <>
+    <NavBar/>
           <Outlet/>
           <Footr/>
 

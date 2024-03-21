@@ -41,8 +41,7 @@
     <ol>
       <li>
         Cliquez sur le bouton ci-dessous pour accéder à la page de réinitialisation de mot de passe :
-        <a href="{{ $resetLink }}" style="text-decoration: none;">
-          <button style="background-color: #4CAF50; /* Green */
+        <button style="background-color: #4CAF50; /* Green */
                         border: none;
                         color: white;
                         padding: 10px 20px;
@@ -50,10 +49,10 @@
                         text-decoration: none;
                         display: inline-block;
                         font-size: 16px;">
-            Réinitialiser le mot de passe
-          </button>
-        </a>
-      </li>
+                <a href="{{ $resetLink }}" style="text-decoration: none;">
+                Réinitialiser le mot de passe
+                </a>
+      </button>
       <li>
         Sur la page de réinitialisation,{{$resetLink}} suivez les instructions pour choisir un nouveau mot de passe sécurisé.
       </li>

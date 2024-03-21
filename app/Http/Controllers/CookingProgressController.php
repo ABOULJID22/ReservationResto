@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MenuController extends Controller
+class CookingProgressController extends Controller
 {
     /**
      * Display a listing of the resource.

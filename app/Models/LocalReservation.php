@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class LocalReservation extends Model
 {
     use HasFactory;
-
+    
     protected $fillable = [
-        'title', 'item_count', 'img'
+        'local_cart_command_id'
     ];
 
-    public function menus()
+    public function localCartCommand()
     {
-        return $this->hasMany(Menu::class);
+        return $this->belongsTo(LocalCartCommand::class);
     }
 }
